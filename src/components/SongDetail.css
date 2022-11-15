@@ -1,0 +1,133 @@
+.song-detail {
+  grid-row: 2/8;
+  grid-column: 1/5;
+  color: white;
+  background-color: #4173bd;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 30% 1fr 1fr 1fr;
+  /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  background-size: cover;
+  opacity: 0.9;
+  margin: 20px;
+  transition: all 0.1s ease-in-out;
+}
+
+.song-detail:hover {
+  opacity: 1;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-duration: 3000ms;
+  transform: scale(1.04);
+}
+
+
+
+.now-playing {
+  background-color: #000;
+  grid-column: 1/3;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  opacity: 0.5;
+}
+.now-playing > * {
+  margin: 12px;
+}
+@media (max-width: 760px) {
+  .song-detail {
+    display: none;
+  }
+}
+
+.song-detail > div {
+  width: 100%;
+  height: 100%;
+}
+
+.album-img {
+  grid-row: 2/4;
+  grid-column: 1/3;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  opacity: 0.5;
+  display: flex;
+  justify-content:center;
+}
+
+.artist-img {
+  grid-column: 1/3;
+/* height: 100%; */
+  width: 100%;
+  /* border-radius: 9999px; */
+  /* background-color: yellow; */
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  
+}
+.artist {
+  margin-left:25px;
+}
+
+
+
+.header {
+  margin-left: 30px;
+  line-height: 0px;
+}
+.header h3 {
+  font-size: 16px;
+  line-height: 16px;
+}
+.header p {
+  font-size: 10px;
+  line-height: 0%;
+}
+
+.album-img > img {
+  /* width: 100%; */
+  height: 100%;
+}
+.album-img {
+  height: 100%;
+  width: 100%;
+  /* background-color: transparent; */
+}
+.artist-img > img {
+  height: 64px;
+  border-radius: 1000%
+}
+
+.artist-img > .artist-name {
+  color: white;
+}
+
+.artist-img {
+  background-color: #000;
+  opacity: 0.9;
+}
+
+.waviy {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+}
+.waviy span {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  animation: waviy 5s infinite;
+  animation-delay:1s;
+  
+}
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translatex(0)
+  }
+  20% {
+    transform: translatex(20px)
+  }
+}

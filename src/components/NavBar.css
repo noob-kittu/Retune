@@ -1,0 +1,37 @@
+.navbar {
+    background-color: rgb(9 13 21);
+    color: white;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    position: sticky;
+    grid-column: 1/13;
+    box-shadow: 0px 2px 2px rgb(10, 10, 10);
+    z-index: 2;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+
+}
+
+.navbar img {
+    width: 100px;
+}
+
+
+.nav-links {
+    position: absolute;
+    right: 1rem;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.nav-links>a>i:hover {
+    cursor: pointer;
+    color: #38bdf8;
+}
