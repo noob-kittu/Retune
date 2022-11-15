@@ -37,8 +37,13 @@
 }
 @media (max-width: 760px) {
   .song-detail {
-    display: none;
-  }
+    width: 100%;
+    grid-row: 3/3;
+    height: 350px;
+    opacity: 1;
+    background-size:contain;
+    grid-column: 1/12;
+ }
 }
 
 .song-detail > div {

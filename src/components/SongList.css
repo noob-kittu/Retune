@@ -28,8 +28,10 @@
 
 @media (max-width: 760px) {
     #song-list {
+        grid-row: 4/8;
         grid-column: 1/13;
     }
+
 }
 
 .song-item.header:hover {
