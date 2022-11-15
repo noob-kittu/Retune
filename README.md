@@ -8,7 +8,7 @@ A modern Web-Based music player made using ReactJS
 
 ## Deployment
 
-Retune is deployed at [Vercel](https://vercel.com/) and can be accessed by clicking [here](https://retune.vercel.app/)
+Retune is deployed at [Vercel](https://vercel.com/) and can be accessed by clicking [here](https://retune-nu.vercel.app)
 
 
 ## Features
